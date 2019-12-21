@@ -1,4 +1,4 @@
-package com.java.solutions;
+package com.hackerrank.java.solutions;
 
 import java.util.Arrays;
 import java.util.Comparator;
