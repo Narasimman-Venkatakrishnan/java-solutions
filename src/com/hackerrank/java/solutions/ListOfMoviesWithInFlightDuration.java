@@ -2,7 +2,7 @@ package com.hackerrank.java.solutions;
 
 import java.util.Arrays;
 
-    /*  find out best pair of movies from a list(playtime in minutes)
+    /*  find out best pair of movies from a list(playtime is in minutes)
      where sum of playing time is equal or within flying time */
 
  public class ListOfMoviesWithInFlightDuration  {
