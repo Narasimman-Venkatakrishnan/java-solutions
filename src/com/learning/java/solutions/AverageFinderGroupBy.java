@@ -1,4 +1,4 @@
-package com.hackerrank.java.solutions;
+package com.learning.java.solutions;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.groupingBy;
 public class AverageFinderGroupBy {
     public static void main(String[] args) {
 
-        String[][] scores = { { "simma", "70" }, { "Raghu", "60" }, { "Lakshmi", "70" }, { "Lakshmi", "100" },{ "Raghu", "100" } };
+        String[][] scores = { { "Simma", "70" }, { "Raghu", "60" }, { "Lakshmi", "70" }, { "Lakshmi", "100" },{ "Raghu", "100" } };
 
         double highestAvg = Arrays.stream(scores)
                                   .collect(groupingBy(s -> s[0], averagingInt(s -> parseInt(s[1]))))

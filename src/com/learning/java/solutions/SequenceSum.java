@@ -1,4 +1,4 @@
-package com.hackerrank.java.solutions;
+package com.learning.java.solutions;
 
 import java.util.stream.IntStream;
 
