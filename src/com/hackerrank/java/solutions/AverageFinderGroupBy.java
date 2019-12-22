@@ -7,7 +7,7 @@ import static java.util.Comparator.naturalOrder;
 import static java.util.stream.Collectors.averagingInt;
 import static java.util.stream.Collectors.groupingBy;
 
-/* Finding the average score from the list grouping by candidate name  */
+/* Finding the average score from the list grouping by student name  */
 
 public class AverageFinderGroupBy {
     public static void main(String[] args) {
