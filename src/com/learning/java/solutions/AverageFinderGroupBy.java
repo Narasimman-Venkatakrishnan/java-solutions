@@ -12,14 +12,9 @@ import static java.util.stream.Collectors.groupingBy;
 public class AverageFinderGroupBy {
     public static void main(String[] args) {
 
-        String[][] scores = { { "Simma", "70" }, { "Raghu", "60" }, { "Lakshmi", "70" }, { "Lakshmi", "100" },{ "Raghu", "100" } };
+        String[][] scores = {{"Simma", "70"}, {"Raghu", "60"}, {"Lakshmi", "70"}, {"Lakshmi", "100"}, {"Raghu", "100"}};
 
-        double highestAvg = Arrays.stream(scores)
-                                  .collect(groupingBy(s -> s[0], averagingInt(s -> parseInt(s[1]))))
-                                  .values()
-                                  .stream()
-                                  .max(naturalOrder())
-                                  .get();
+        double highestAvg = Arrays.stream(scores).collect(groupingBy(s -> s[0], averagingInt(s -> parseInt(s[1])))).values().stream().max(naturalOrder()).get();
 
         System.out.println(highestAvg);
     }

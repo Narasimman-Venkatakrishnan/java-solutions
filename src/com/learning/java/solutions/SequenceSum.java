@@ -11,7 +11,7 @@ public class SequenceSum {
     {
         //i = 1 , j = 3, k = -1
         IntStream stream1 = IntStream.rangeClosed(1, 3);
-        IntStream stream2 = IntStream.range(-1,3);
-        System.out.println(IntStream.concat(stream1,stream2).reduce(0,(subTotal,element) -> subTotal + element));
+        IntStream stream2 = IntStream.range(-1, 3);
+        System.out.println(IntStream.concat(stream1, stream2).reduce(0, (subTotal, element) -> subTotal + element));
     }
 }

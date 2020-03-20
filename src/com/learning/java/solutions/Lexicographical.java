@@ -11,8 +11,8 @@ public class Lexicographical {
     /* The program will produce output as following "Hac->Hack->Hacker->HackerRank"  */
 
     public static void main(String[] args) {
-        String[] words = { "HackerRank", "Hack", "Hacker", "Hac" };
-        Comparator<String> nameComparator = (s1, s2) -> s1.compareTo(s2);
+        String[] words = {"HackerRank", "Hack", "Hacker", "Hac"};
+        Comparator<String> nameComparator = (s1, s2) -> s2.compareTo(s1);
         System.out.println(Arrays.stream(words).sorted(nameComparator).collect(Collectors.joining("->")));
     }
 }
